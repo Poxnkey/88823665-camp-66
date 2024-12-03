@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8">
+
+        <style>
+            .form-group {
+                display: flex;
+                margin-bottom: 10px;
+                align-items: center;
+            }
+
+            .form-group label {
+                flex: 1;
+                max-width: 125px;
+            }
+
+            .form-group input {
+                margin-left: 30px;
+                flex: 0;
+                max-width: 200px;
+            }
+
+            .form-group textarea, select {
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <form style="width: 500px; margin: 0 auto;">
+            <h1>Workshop #HTML - FORM</h1>
+            
+            <div class="form-group">
+                <label for="name">ชื่อ</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">สกุล</label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+
+            <div class="form-group">
+                <label for="birth">วัน/เดือน/ปีเกิด</label>
+                <input type="date" id="birth" name="birth">
+            </div>
+
+            <div class="form-group">
+                <label for="age">อายุ</label>
+                <input type="number" id="age" name="age">
+            </div>
+
+            <div class="form-group">
+                <label>เพศ</label>
+                <div>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">หญิง</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>รูป</label>
+                <input type="file" id="picture" name="picture">
+            </div>
+
+            <div class="form-group">
+                <label>ที่อยู่</label>
+                <textarea id="address" name="address" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>สีที่ชอบ</label>
+                <select id="color" name="color">
+                    <option value="red">สีแดง</option>
+                    <option value="blue">สีฟ้า</option>
+                    <option value="green">สีเขียว</option>
+                    <option value="white">สีขาว</option>
+                    <option value="black">สีดำ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>แนวเพลงที่ชอบ</label>
+                <div>
+                    <input type="radio" id="song1" name="song">
+                    <label for="song1">เพื่อชีวิต</label>
+                    <input type="radio" id="song2" name="song">
+                    <label for="song2">ลูกทุ่ง</label>
+                    <input type="radio" id="song3" name="song">
+                    <label for="song3">อื่นๆ</label>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <input type="checkbox" id="check" name="check">
+                <label for="check">ยินยอมให้เก็บข้อมูล</label>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <button type="reset">Reset</button>
+                <button type="submit" style="margin-left: 150px;">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
