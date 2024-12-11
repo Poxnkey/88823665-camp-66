@@ -1,0 +1,80 @@
+/* mystyle.css */
+
+* {
+    font-family: 'Kanit';
+}
+
+button[type="reset"] {
+    border-radius: 10%;
+    border: 1px solid;
+    background-color: #ffa3a3;
+}
+
+button[type="reset"]:hover {
+    border-radius: 10%;
+    border-width: 3px;
+    background-color: rgb(225, 39, 39);
+}
+
+button[type="submit"] {
+    border-radius: 10%;
+    border: 1px solid;
+    background-color: #b7ffa3;
+}
+
+button[type="submit"]:hover {
+    border-radius: 10%;
+    border-width: 3px;
+    background-color: rgb(90, 200, 116);
+}
+
+.form-container {
+    width: 450px;
+    margin: 0 auto;
+    border: 10px solid;
+    padding: 30px;
+}
+
+.form-container h1 {
+    margin-top: -20px;
+    border-bottom: 5px solid;
+    text-align: center;
+}
+
+
+.form-group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-group  label:not(.skip label) {
+    border: 0px;
+    border-style: solid;
+    border-left: 5px solid;
+    padding-left: 5px;
+    flex: 1;
+    max-width: 125px;
+    align-content: center;
+}
+
+.form-group input {
+    margin-left: 30px;
+    flex: 0;
+    max-width: 200px;
+}
+
+.form-group input:hover, textarea:hover, select:hover{
+    border-width: 3px;
+}
+
+.form-group input[type="radio"]:hover{
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+}
+
+.form-group input:focus {
+    border-width: 5px;
+}
+
+.form-group textarea, select {
+    margin-left: 30px;
+}
