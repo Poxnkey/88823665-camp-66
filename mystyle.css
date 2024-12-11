@@ -63,8 +63,10 @@ button[type="submit"]:hover {
     max-width: 200px;
 }
 
-.form-group input:hover, textarea:hover, select:hover{
+.form-group input:not(.form-group input[type="file"]):hover, textarea:hover, select:hover{
     border-width: 3px;
+    border-style: solid;
+    border-color: black;
 }
 
 .form-group input[type="radio"]:hover{
@@ -72,6 +74,8 @@ button[type="submit"]:hover {
 }
 
 .form-group input:focus {
+    border-color: black;
+    border-style: solid;
     border-width: 5px;
 }
 
