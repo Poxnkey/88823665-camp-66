@@ -25,7 +25,7 @@ class UserController extends Controller
         $muser = User :: find($req->id);
         $muser->name = $req->name;
         $muser->email = $req->email;
-        $muser->password = $req->password;
+        //$muser->password = $req->password;
         $muser->save();
         return redirect('/users');
     }
