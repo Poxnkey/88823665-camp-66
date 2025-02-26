@@ -1,4 +1,4 @@
-@extends('layout.default_with_menu')
+@extends('layouts.default_with_menu')
 
 @section('content')
 <div class="row">
